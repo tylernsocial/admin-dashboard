@@ -1,0 +1,12 @@
+home: https://www.svgrepo.com/svg/322563/house
+profile: https://www.svgrepo.com/svg/512729/profile-round-1342
+messages: https://www.svgrepo.com/svg/533272/message-square-list
+tasks: https://www.svgrepo.com/svg/432236/memo-pad
+groups: https://www.svgrepo.com/svg/458732/group?edit=true
+settings: https://www.svgrepo.com/svg/511122/settings
+support: https://www.svgrepo.com/svg/486865/support
+Locker: https://www.svgrepo.com/svg/444632/locker-closed
+search: https://www.svgrepo.com/svg/532552/search-alt-2
+noti: https://www.svgrepo.com/svg/521509/bell-ringing
+share: https://www.svgrepo.com/svg/522276/share
+pin: https://www.svgrepo.com/svg/489088/pin
