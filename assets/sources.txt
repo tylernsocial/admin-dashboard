@@ -10,3 +10,4 @@ search: https://www.svgrepo.com/svg/532552/search-alt-2
 noti: https://www.svgrepo.com/svg/521509/bell-ringing
 share: https://www.svgrepo.com/svg/522276/share
 pin: https://www.svgrepo.com/svg/489088/pin
+
