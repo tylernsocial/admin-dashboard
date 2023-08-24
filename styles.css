@@ -1,8 +1,155 @@
-.root{
---dark-text: #202020;
---light-text: #616161; 
---yo: #a1a1a1;
---bgCol: rgb(235, 227, 223);
---bakcup:#d4d4d4;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Libre+Baskerville&family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root{
+--dark-text: hwb(0 26% 74%);
+--light-text: rgb(134, 134, 134); 
+--bgCol: rgb(255, 247, 179);
+--cardCol: rgb(153, 224, 195);
+
 }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bgCol);
+    color: var(--light-text);
+    font-family: "Merriweather", sans-serif;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--dark-text);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+p,
+p a { /*targets nested a tag in p tag*/
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--light-text);
+  line-height: 1.4;
+}
+
+p{
+    margin-bottom: 10px;
+}
+/* p a:hover{
+    make something for link hover
+} */
+
+::placeholder {
+    color: var(--light-text);
+    font-family: 'Merriweather', sans-serif;
+    font-size: 16px;
+    opacity: 0;
+  }
+  
+input,
+input:focus,
+input:focus:not(:placeholder-shown) {
+    background-color: rgb(201, 177, 167);
+    border-radius: 7px 20px;
+    border: none;
+    color: var(--dark-text);
+    font-family: 'Merriweather', sans-serif;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 20px;
+    transition: width 0.3s;
+    width: 150px;
+}
+
+input:not(:focus):placeholder-shown {
+    background-image: url(./assets/search.svg);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border-radius: 7px 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template: max-content calc(100vh) / max-content minmax(600px, 1fr);
+    padding-right: 20px;
+}
+
+.nav-bar{
+    grid-area: 1 / 2 /2 / 3;
+    padding-top: 20px;
+}
+
+.nav-bar-container{
+    background-color: var(--cardCol);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+    display: grid;
+    grid-template: max-content / 1fr max-content;
+    padding: 15px 20px 15px 30px;
+    gap: 20px;
+    overflow: hidden;
+}
+.nav-bar-features{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.nav-bar-features a,
+.nav-bar-features a:hover,
+.nav-bar-features a:visited {
+  color: var(--light-text);
+  text-decoration: none;
+}
+/* .nav-bar-features a:hover{
+    make something for hover
+} */
+.notis{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+.nav-bar-functions{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.v-divider{
+background-color: rgb(9, 20, 78);
+  height: 100%;
+  width: 1px;
+}
+.h-divider {
+    background-color: rgb(36, 45, 92);
+    height: 1px;
+    width: 100%;
+}
+.pfp{
+  border-radius: 50%;
+  border: 1px solid var(--light-text);
+  height: 40px;
+  width: 40px;
+}
+
+
+
+
 
